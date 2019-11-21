@@ -1,0 +1,176 @@
+/*border and body details*/
+
+body {
+    font-family: 'Acme', sans-serif;
+    border: 10px solid #42f4eb;
+    margin: 10px auto;
+    max-width: 700px;
+    width: 80%;
+    padding: 5px;
+    border-radius: 3%
+}
+
+h2 {
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+h4 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+th {
+    text-transform: capitalize;
+}
+
+
+/*img {
+    max-width: 578px
+    }*/
+
+img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin-top: 5px;
+    text-align: center;
+    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+}
+
+h1:hover {
+    color: blue;
+    transform: scale(2.1);
+}
+
+
+/*table - trying to create a table for the weekly planning which will be a responsive table to update per individual*/
+
+.Column:hover {
+    color: pink;
+}
+
+a {
+    text-transform: capitalize;
+}
+
+.link {
+    text-align: center;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+table td {
+    border-collapse: collapse;
+    border: 3px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#column1 {
+    width: 15%;
+}
+
+
+/*td {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    size: auto;
+    }*/
+
+
+/*link details to show interaction*/
+
+a:visited {
+    color: orange;
+}
+
+
+/*.Column {
+    text-transform: capitalize;
+    }*/
+
+#second {
+    text-align: center;
+}
+
+
+/*navigation bar - would like this eventually to be in a burger*/
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #42f4eb;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+img.logo {
+    max-width: 10%;
+    max-height: 10%;
+    float: left;
+    padding: 3px 0;
+    margin: 10px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 15px;
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
